@@ -1,6 +1,15 @@
 import requests
-URL = "http://127.0.0.1"
-PARAMS = {"action": "login", "username": "abcd", "token": "MTIzNA==", "hash": "72cd726f3b6b5a705bf9e9461a8986be2451fad4"}
-respond = requests.get(url=URL, params=PARAMS)
+URL = "http://localhost:5555"
+# Login request
+#message_body = {"action": "login", "username": "abcd", "token": "MTIzNA==", "hash": "6dccd157d0d32c6f462c52c99247a3a06999f146"}
+# Get-actions request
+#message_body = {"action": "get-actions", "type": "admin", "token": "MTIzNA=="}
+# Get-users request
+message_body = {"action": "get-users", "type": "admin", "token": "MTIzNA=="}
+
+respond = requests.post(url=URL, json=message_body)
 respond_data = respond.json()
-print(respond_data)
+if respond.status_code == 200:
+    print(respond_data)
+else:
+    print(f"Error{respond.status_code}")

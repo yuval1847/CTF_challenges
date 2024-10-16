@@ -10,4 +10,4 @@ def encrypt(text:str):
     # The function returns the given string after encrypting it.
     return base64.b64encode(text.encode()).decode()
 
-print(encrypt("admin123"))
+print(decrypt("Y3liZXI="))
