@@ -14,20 +14,12 @@ def encrypt(text:str):
 
 
 
-def generate_sha1_hash(input_string):
-    # Encode the input string to bytes
-    input_bytes = input_string.encode('utf-8')
-    
-    # Create a new SHA-1 hash object
+def generate_sha1_hash(input_string:str):
+    # The function gets a string.
+    # The function returns the hash of the given string according to SHA-1.
     sha1_hash = hashlib.sha1()
-    
-    # Update the hash object with the bytes of the input string
-    sha1_hash.update(input_bytes)
-    
-    # Get the hexadecimal representation of the hash
-    hashed_string = sha1_hash.hexdigest()
-    
-    return hashed_string
+    sha1_hash.update(input_string.encode())
+    return sha1_hash.hexdigest()
 
-
-print(generate_sha1_hash("""{"action": "login", "username": "admin", "token": "Y3liZXI="}"""))
+if __name__ == "__main__":
+    print(generate_sha1_hash("17/10/2024"))
