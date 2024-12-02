@@ -1,0 +1,14 @@
+path1 = C:\Users\USER\AppData\Local\Temp\_MEI183842
+path2 = C:\Users\USER\AppData\Local\CTFGame
+
+
+user_data.json original:
+{"user": {"name": "admin", "location": "AppData"}}
+
+
+admin.json original:
+{
+    "name": "admin",
+    "permissions_level": "1",
+    "# Critical System Note": "You are not allowed to change this file!!"
+}
