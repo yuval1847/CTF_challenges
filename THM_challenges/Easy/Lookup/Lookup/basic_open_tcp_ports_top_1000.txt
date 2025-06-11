@@ -1,0 +1,9 @@
+# Nmap 7.94SVN scan initiated Fri May 30 14:11:43 2025 as: /usr/lib/nmap/nmap --privileged -oN basic_open_tcp_ports_top_1000.txt 10.10.58.223
+Nmap scan report for 10.10.58.223
+Host is up (0.080s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+# Nmap done at Fri May 30 14:11:45 2025 -- 1 IP address (1 host up) scanned in 1.58 seconds

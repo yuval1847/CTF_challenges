@@ -1,0 +1,4 @@
+Target's IP: 10.10.97.1
+Open ports: 22, 80
+Valunrable to: CVE-2019-9194
+Exploit: lfinder_php_connector_exiftran_cmd_injection
